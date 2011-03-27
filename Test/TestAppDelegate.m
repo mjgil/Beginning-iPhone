@@ -7,14 +7,24 @@
 //
 
 #import "TestAppDelegate.h"
+#import "MyViewController.h"
 
-@implementation TestAppDelegate
+@implementation TestAppDelegate 
 
-
+@synthesize myViewController=_myViewController;
 @synthesize window=_window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // initializes aViewController and assigns it to self
+    MyViewController *aViewController = [[MyViewController alloc] 
+                                         initWithNibName:@"MyViewController" bundle:[NSBundle mainBundle]];
+    [self setMyViewController:aViewController];
+    [aViewController release];
+    
+    // sets the View Controller in self to be the root view controller
+    self.window.rootViewController = self.myViewController;
+    
     // Override point for customization after application launch.
     [self.window makeKeyAndVisible];
     return YES;
@@ -61,6 +71,7 @@
 
 - (void)dealloc
 {
+    [_myViewController release];
     [_window release];
     [super dealloc];
 }

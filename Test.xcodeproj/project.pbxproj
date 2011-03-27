@@ -14,6 +14,8 @@
 		9AFC9B60133EFA81007C32DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC9B5F133EFA81007C32DB /* main.m */; };
 		9AFC9B63133EFA81007C32DB /* TestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC9B62133EFA81007C32DB /* TestAppDelegate.m */; };
 		9AFC9B66133EFA81007C32DB /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AFC9B64133EFA81007C32DB /* MainWindow.xib */; };
+		9AFC9B74133F05BA007C32DB /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC9B72133F05BA007C32DB /* MyViewController.m */; };
+		9AFC9B75133F05BA007C32DB /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AFC9B73133F05BA007C32DB /* MyViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +23,16 @@
 		9AFC9B52133EFA81007C32DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9AFC9B54133EFA81007C32DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9AFC9B56133EFA81007C32DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9AFC9B5A133EFA81007C32DB /* Test-Info.plist */ = {isa = PBXFileReference; path = "Test-Info.plist"; sourceTree = "<group>"; };
+		9AFC9B5A133EFA81007C32DB /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
 		9AFC9B5C133EFA81007C32DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9AFC9B5E133EFA81007C32DB /* Test-Prefix.pch */ = {isa = PBXFileReference; path = "Test-Prefix.pch"; sourceTree = "<group>"; };
+		9AFC9B5E133EFA81007C32DB /* Test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Test-Prefix.pch"; sourceTree = "<group>"; };
 		9AFC9B5F133EFA81007C32DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9AFC9B61133EFA81007C32DB /* TestAppDelegate.h */ = {isa = PBXFileReference; path = TestAppDelegate.h; sourceTree = "<group>"; };
+		9AFC9B61133EFA81007C32DB /* TestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAppDelegate.h; sourceTree = "<group>"; };
 		9AFC9B62133EFA81007C32DB /* TestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAppDelegate.m; sourceTree = "<group>"; };
 		9AFC9B65133EFA81007C32DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		9AFC9B71133F05BA007C32DB /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		9AFC9B72133F05BA007C32DB /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		9AFC9B73133F05BA007C32DB /* MyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,9 @@
 		9AFC9B43133EFA81007C32DB = {
 			isa = PBXGroup;
 			children = (
+				9AFC9B71133F05BA007C32DB /* MyViewController.h */,
+				9AFC9B72133F05BA007C32DB /* MyViewController.m */,
+				9AFC9B73133F05BA007C32DB /* MyViewController.xib */,
 				9AFC9B58133EFA81007C32DB /* Test */,
 				9AFC9B51133EFA81007C32DB /* Frameworks */,
 				9AFC9B4F133EFA81007C32DB /* Products */,
@@ -142,6 +150,7 @@
 			files = (
 				9AFC9B5D133EFA81007C32DB /* InfoPlist.strings in Resources */,
 				9AFC9B66133EFA81007C32DB /* MainWindow.xib in Resources */,
+				9AFC9B75133F05BA007C32DB /* MyViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +163,7 @@
 			files = (
 				9AFC9B60133EFA81007C32DB /* main.m in Sources */,
 				9AFC9B63133EFA81007C32DB /* TestAppDelegate.m in Sources */,
+				9AFC9B74133F05BA007C32DB /* MyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
